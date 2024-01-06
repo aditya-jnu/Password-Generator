@@ -1,0 +1,69 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient( circle 801px at 10.1% 20.1%,  rgba(209,234,205,1) 5.3%, rgb(183, 230, 241) 90% );
+}
+
+.container{
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    position: relative;
+    padding: 2em;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;;
+}
+.container:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+}
+
+.pass{
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  width: 90%;
+  height: auto;
+  word-wrap: break-word;
+  background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(177, 201, 235) 0%, rgb(114, 181, 181) 90% );
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;;
+}
+.pass:hover{
+  transform: scale(1.1);
+}
+
+.options{
+    position: absolute;
+    bottom: 0;
+    margin: 0.75rem;
+    display: flex;
+    gap: 1rem;
+}
+.options button{
+    background-color: bisque;
+    padding: 0.5em;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.options button:hover{
+    background-color: rgba(21, 21, 188, 0.475);
+    transform: scale(1.1);
+}
